@@ -1,5 +1,16 @@
 # ADD LOCAL CONFIGURATION HERE
-
+[alias]
+  co = checkout
+  ci = commit
+  sta = status
+  stat = status
+  stats = status
+  headless = !sh -c 'git symbolic-ref HEAD refs/heads/$0 && rm .git/index && git clean -fdx'
+[color]
+  interactive = auto
+[merge]
+  tool = opendiff
+  summary = true
 
 # DO NOT EDIT BELOW THIS LINE
 [color]
